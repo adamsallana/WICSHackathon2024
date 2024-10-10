@@ -8,8 +8,7 @@ Plan B or Condoms
 3. quantity:
 
 4. timeline?
-
-5. within 24 hours
+ within 24 hours
 within 2 days
 within this week
 
