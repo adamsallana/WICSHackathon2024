@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plan B Distribution Network</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Request Plan B for a quick efficient delivery!</h1>
+    </div>
+    
+    <nav class="navbar">
+    <a href="frontPage.html">Home</a>
+    <a href="resources.html">Resources</a>
+    <a href="aboutus.html">About Us</a>
+    </nav>
+
+    <div class="requests">
+        <h2>Submit a request below!</h2>
+            <form action ="/action_page.php">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <label for="emailinp">Email:</label><br>
+                <input type="email" id="emailinp" name="emailinp" required placeholder="yourname@unc.edu"><br><br>
+                <label for="phone#">Phone #:</label><br>
+                <input type="tel" id="phone#" name="phone#" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="123-456-7890"><br><br>
+                <label for="address">Drop-off Address:</label><br>
+                <input type="text" id="address" name="address" required placeholder="1234 Main St, City, State, ZIP, Country"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+</body>
+
+</html>

@@ -1,7 +1,13 @@
+
+
 from distutils.log import debug 
 from fileinput import filename 
+# from flask_ngrok import run_with_ngrok 
 from flask import *  
+
+
 app = Flask(__name__)   
+
 
 # #home page 
 # @app.route('/')   
@@ -10,7 +16,9 @@ app = Flask(__name__)
 
 #user email
 @app.route('/', methods=['GET', 'POST'])   
+
 def upload():   
+    render_template("frontPage.html")
     if request.method == 'POST':
         # Then get the data from the form
             email = request.form['email']
@@ -22,7 +30,7 @@ def upload():
 
 
     else:   
-        return render_template('useremailhtml')
+        return render_template('frontPage.html')
 
 
 #which product do they need
@@ -116,6 +124,6 @@ def upload():
 # #         return response
 
 
-# if __name__ == '__main__':   
-#     app.run(debug=True)
+if __name__ == '__main__':   
+    app.run(debug=True)
 
